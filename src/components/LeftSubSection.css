@@ -1,0 +1,121 @@
+.LeftSubSection {
+  display: flex;
+  flex-direction: column;
+  /* stack items vertically */
+  align-items: flex-start;
+  /* keep left alignment */
+  /* border: 2px solid green; */
+  gap: 1rem;
+  /* optional: spacing between elements */
+
+}
+
+.LeftSubSection h1 {
+  font-family: HelvJob;
+  font-size: 2.5em;
+  width: 70%
+}
+
+.priceDetails {
+  font-family:Gilory ;
+  font-size: 30px;
+  margin: 0;
+}
+
+.scratchCard {
+  display: flex;
+  gap: 5px;
+  font-family: Gilory;
+  margin: 0;
+}
+
+.green {
+  color: #00a168;
+}
+
+.gray {
+  color: #929292;
+
+}
+
+.tags {
+   /* border: 2px solid blue; */
+   width: 35vw;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9em;
+  /* spacing between items in a row */
+  row-gap: 8px;
+  /* spacing between wrapped rows */
+  flex-wrap: wrap;
+  margin: 10px 0;
+  font-family: HelvList;
+}
+
+.tags h4 {
+  background-color: #212121;
+  margin: 0;
+  /* remove default h4 margin */
+  padding: 4px 15px;
+  /* optional: add padding for better tag styling */
+  border-radius: 4px;
+  /* optional: make them look like pills */
+
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  /* space between buttons */
+}
+
+.LeftSubSection h5 {
+  font-size: 15px;
+}
+.scratchCard a{
+text-decoration: none;
+color: #0A66C2;
+}
+@media (max-width:1200px) {
+  .LeftSubSection h1 {
+    font-size: 3.5vw;
+  }
+  .tags {
+    width: 100%;
+  }
+}
+
+@media (max-width:800px) {
+  .LeftSubSection h1 {
+    font-size: 33px;
+  }
+
+  .LeftSubSection {
+    width: 100%;
+  }
+}
+
+@media (max-width:600px) {
+  .LeftSubSection h1 {
+    font-size: 6vw;
+    width: 100%;
+  }
+}
+@media (max-width:412px) {
+  .tags{
+    font-size: 14px;
+  }
+  .tags h4{
+    padding:3px 8px ;
+  }
+}
+@media (max-width:353px) {
+  .tags{
+    font-size: 11px;
+  }
+  .tags h4{
+    padding:3px 8px ;
+  }
+}

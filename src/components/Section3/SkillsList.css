@@ -1,0 +1,81 @@
+.SkillListMain{
+  width: 70%;
+  height: 100%;
+}
+
+.Lists{
+  border-bottom: 2px solid #1e1e1e;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for desktop */
+.Lists:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.Lists img {
+  height: 100%;     
+  width: 100%;      
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.Lists:hover img {
+  transform: rotate(10deg);
+}
+
+.skill{
+  font-size: 1.5rem;
+  font-family: 'neu';
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.Lists:hover .skill {
+  color: #ff7f50;
+  transform: translateX(5px);
+}
+
+/* Click/tap effect for mobile & tablet */
+.Lists.active {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.Lists.active img {
+  transform: rotate(10deg);
+}
+
+.Lists.active .skill {
+  color: #ff7f50;
+  transform: translateX(5px);
+}
+
+.image{
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width:650px) {
+  .skill{
+    font-size: 1rem;
+  }
+  .image{
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .Lists img{
+    height: 80%;
+    width: 800%;
+  }
+}

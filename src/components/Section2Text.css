@@ -1,0 +1,44 @@
+.textClass {
+    font-family: 'HelvJob';
+    font-size: 30px;
+    color: green;
+    font-weight: bold;
+    background-image: url(https://ik.imagekit.io/sheryians/Aptitude%20&%20Reasoning/mask%20Large_ZB4lGN8hWZ.png);
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.numberClass {
+    font-family: 'HelvJob';
+    font-size: 80px;
+    color: green;
+    font-weight: bold;
+    background-image: url(https://ik.imagekit.io/sheryians/Aptitude%20&%20Reasoning/mask%20Large_ZB4lGN8hWZ.png);
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1030px) {
+    .textClass {
+        font-size: 20px;
+    }
+
+    .numberClass {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 680px) {
+    .textClass {
+        font-size: 10px;
+    }
+
+    .numberClass {
+        font-size: 25px;
+    }
+}
+

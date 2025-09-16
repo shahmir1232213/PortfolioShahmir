@@ -1,0 +1,39 @@
+.Section2{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 65px;
+}
+.head{
+   font-family:'HelvJob';
+    margin: 0;
+    padding: 0;
+}
+.title{
+    position: relative;
+    font-size: 120px;
+    font-weight: bold;
+    background-image: url(https://ik.imagekit.io/sheryians/Aptitude%20&%20Reasoning/mask%20Large_ZB4lGN8hWZ.png);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+} 
+.subtitle{
+    font-size: 28px;
+    text-align: center;
+}
+.bloom{
+    position: absolute;
+    filter: blur(80px);
+}
+@media (max-width: 600px) {
+   .title{
+    font-size: 20vw;
+   }
+   .subtitle{
+    font-size: 6vw;
+   }
+    
+}

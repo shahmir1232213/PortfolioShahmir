@@ -1,0 +1,129 @@
+/* ProjectSection.css */
+.project-section {
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 0; /* 🚀 no gap between title and cards */
+}
+
+.carousel-container {
+  max-width: 1400px; /* allow wider cards on desktop */
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Bigger card size for better view */
+.card {
+  width: 360px;
+  height: 800px;
+  border-radius: 16px;
+  overflow: hidden; /* video respects border radius */
+  display: flex;
+}
+
+.video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crop & fill card */
+  display: block;
+  border-radius: 16px;
+}
+
+.testimonial-btn {
+  margin-top: 1.5rem; /* button sits closer to cards */
+  padding: 0.75rem 2rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.testimonial-btn:hover {
+  background: #218838;
+}
+
+/* Navigation buttons */
+.swiper-nav-buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 10;
+  pointer-events: none; /* Allow clicks to pass through to the slider */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  pointer-events: all;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  transition: background 0.3s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.vid{
+    display: flex;
+
+}
+/* 📱 Responsive tweaks */
+@media (max-width: 768px) {
+  .card {
+    width: 280px;
+    height: 600px;
+  }
+  .card-title-container {
+    width: 280px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 220px;
+    height: 450px;
+  }
+   .card-title-container {
+    width: 220px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+  }
+  .swiper-nav-buttons {
+    display: none; /* Hide buttons on very small screens */
+  }
+} 

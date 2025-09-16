@@ -1,0 +1,58 @@
+.NavBarBody{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.nav1{
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.nav1 img{
+    height: 25px;
+    width: 25px;
+}
+.nav2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.head{
+    font-family: neu;
+    font-size: 20px;
+    font-weight: 100;
+}
+.nav3{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    gap: 20px;
+    
+}
+.nav3 a {
+  color: inherit;          /* inherit parent color */
+  text-decoration: none;   /* remove underline */
+  flex-direction: row;
+}
+
+@media (max-width:450px) {
+    /* .nav3{
+        display: flex;
+    } */
+    /* .nav2{
+        display: none;
+    } */
+    .head{
+        font-size: 15px;
+
+    }
+}

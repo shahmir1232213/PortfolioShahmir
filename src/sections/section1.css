@@ -1,0 +1,16 @@
+.section1Body{
+    border: 2px solid red;
+}
+.section1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 20px;
+}
+@media (max-width:800px) {
+    .section1 {
+        flex-direction: column-reverse;
+    }
+}

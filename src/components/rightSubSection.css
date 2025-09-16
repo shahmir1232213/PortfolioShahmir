@@ -1,0 +1,59 @@
+.rightSubSec img {
+  width: 100%;
+ height: 100%;
+}
+.rightSubSec {
+  display: flex;
+  flex-direction: column;  /* ✅ put img on left, enroll on right */
+  width: 100%; 
+         /* ✅ take 50% of parent height */
+  /* border: 2px solid brown; */
+  
+}
+.rightSubSec img{
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.enroll {
+  flex: 1;  /* ✅ take the remaining space */
+  display: flex;
+  flex-wrap: wrap;         /* allows items to wrap into multiple rows */
+  justify-content: space-between; /* pushes items left & right */
+  padding-top: 15px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* border: 2px solid orange; */
+  background-color: #1e1e1e;
+}
+
+.rightSubSec h4 {
+  font-family: 'Gilory';
+  background-color: #151515;
+  padding: 12px;
+  margin: 5px;
+  border-radius: 5px;
+  color: white;
+  width: 45%;              /* so 2 items fit per row */
+  box-sizing: border-box;  /* ensures padding doesn't break layout */
+  font-size: 1rem;
+}
+
+span {
+  color: #009560;
+}
+@media (max-width:449px) {
+  .rightSubSec h4 {
+    font-size: 0.8rem;  
+  }
+}
+@media (max-width:386px) {
+  .rightSubSec h4 {
+    font-size: 0.78rem;  
+  }
+}
+@media (max-width:379px) {
+  .rightSubSec h4 {
+    font-size: 0.68rem;  
+  }
+}

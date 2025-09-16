@@ -1,0 +1,23 @@
+.ProjectHeader{
+    /* border: 2px solid red; */
+    font-family:'HelvJob';
+    font-size: 10vh;
+    background-image: url(https://ik.imagekit.io/sheryians/Aptitude%20&%20Reasoning/mask%20Large_ZB4lGN8hWZ.png);
+    background-clip: text;
+    color: transparent;
+    position: relative;
+     text-align: center;
+     
+}
+.bloom2{
+    position: absolute;
+    filter: blur(80px);
+    text-align: center;
+}
+
+@media (max-width:510px) {
+    .ProjectHeader{
+        font-size: 5vh;
+       
+    }
+}

@@ -1,0 +1,32 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #0c0c0c;
+  color: white;
+}
+
+@font-face {
+  font-family: 'neu';
+  src: url('./assets/fonts/NeueMachina-Regular_DQCmjH1st.ttf');
+}
+@font-face {
+  font-family: 'HelvJob';
+  src: url('./assets/fonts/HelveticaNowDisplay-Bold_VMHV5twUMR.ttf');
+}
+
+@font-face {
+  font-family: 'Gilory';
+  src: url('./assets/fonts/Gilroy-Medium_eHDK2RllDd.ttf');
+}
+
+@font-face {
+  font-family: 'HelvList';
+  src: url('./assets/fonts/HelveticaNowDisplay-Light_M4nzWhve6k.ttf');
+}
+
+@font-face {
+  font-family: 'HelvJob2';
+  src: url('./assets/fonts/HelveticaNowDisplay-Bold_VMHV5twUMR.ttf');
+}

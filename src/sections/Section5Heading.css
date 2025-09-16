@@ -1,0 +1,46 @@
+.heading-container {
+  color: white; /* Default color for the 'Level Up With' text */
+  font-size: 4rem; /* Adjust as needed */
+  font-weight: bold;
+  padding-left: 1.2em;
+  margin-top: 2em;
+  padding-bottom: 0.5em;
+  /* display: flex; */
+}
+
+.heading-main {
+  /* This span is for "Level Up With" and is a solid color */
+  display: block;
+  color: white;
+  font-family: 'HelvJob';
+  font-size: 1.5em;
+}
+
+.heading-certification {
+    background-image: url('/images/gradientOrange.png');
+    font-family: 'HelvJob';
+    font-size:1.3em ;
+    background-clip: text;
+     color: transparent;
+    /* position: relative; */ 
+}
+/* 
+.bloom{
+    position: relative;
+} */
+@media (max-width:1123px){
+    .heading-container{
+        font-size: 3em;
+    }
+}
+@media (max-width:615px){
+    .heading-container{
+        font-size: 2em;
+    }
+}
+@media (max-width:392px){
+    .heading-container{
+        font-size: 1.7em;
+        padding-left: 1.2em;
+    }
+}

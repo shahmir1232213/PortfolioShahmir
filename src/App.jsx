@@ -6,6 +6,7 @@ import ProjectSection from './sections/ProjectSection'
 import ProjectHeading from './sections/ProjectHeading'
 import Section5 from './sections/Section5'
 import Section5Heading from './sections/Section5Heading'
+import QuoteBox from './components/Quote'
 
 function App() {
   return (
@@ -19,6 +20,11 @@ function App() {
        <Section5 />
         <ProjectHeading heading={'Thank You!'} />
        {/* <SkillsList /> */}
+       <QuoteBox 
+  quote="Consistency is the key to sucess!." 
+  author="Muhammad Shahmir Siddiqui" 
+/>
+
     </>
   )
 }

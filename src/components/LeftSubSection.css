@@ -40,7 +40,7 @@
 
 .tags {
    /* border: 2px solid blue; */
-   width: 35vw;
+  width: 35vw;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -56,12 +56,80 @@
 .tags h4 {
   background-color: #212121;
   margin: 0;
-  /* remove default h4 margin */
   padding: 4px 15px;
-  /* optional: add padding for better tag styling */
   border-radius: 4px;
-  /* optional: make them look like pills */
+  animation: pulseEffect 2s infinite ease-in-out;
+}
 
+/* Default animation */
+@keyframes pulseEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Different colors for each tag */
+.tags h4:nth-child(1) {
+  animation: pulseTS 2s infinite ease-in-out;
+}
+@keyframes pulseTS {
+  0%,100% { background-color: #212121; color: white; }
+  50% { background-color: #3178c6; color: white; }
+}
+
+.tags h4:nth-child(2) {
+  animation: pulseRN 2s infinite ease-in-out;
+}
+@keyframes pulseRN {
+  0%,100% { background-color: #212121; color: white; }
+  50% { background-color: #61dafb; color: black; }
+}
+
+.tags h4:nth-child(3) {
+  animation: pulseReact 2s infinite ease-in-out;
+}
+@keyframes pulseReact {
+  0%,100% { background-color: #212121; color: white; }
+  50% { background-color: #149eca; color: white; }
+}
+
+.tags h4:nth-child(4) {
+  animation: pulseExpress 2s infinite ease-in-out;
+}
+@keyframes pulseExpress {
+  0%,100% { background-color: #f8f6f6; color: black; }
+  50% { background-color: #000000; color: white; }
+}
+
+.tags h4:nth-child(5) {
+  animation: pulseAI 2s infinite ease-in-out;
+}
+@keyframes pulseAI {
+  0%,100% { background-color: #212121; color: white; }
+  50% { background-color: #74716f; color: white; }
+}
+
+.tags h4:nth-child(6) {
+  animation: pulseMongo 2s infinite ease-in-out;
+}
+@keyframes pulseMongo {
+  0%,100% { background-color: #212121; color: white; }
+  50% { background-color: #009560; color: white; }
+}
+
+.tags h4:nth-child(7) {
+  animation: pulseSQL 2s infinite ease-in-out;
+}
+@keyframes pulseSQL {
+  0%,100% { background-color: #212121; color: white; }
+  50% { background-color: #00648f; color: white; }
 }
 
 .buttons {
@@ -103,6 +171,7 @@ color: #0A66C2;
     width: 100%;
   }
 }
+
 @media (max-width:412px) {
   .tags{
     font-size: 14px;

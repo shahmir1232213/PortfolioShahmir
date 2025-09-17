@@ -1,9 +1,9 @@
 .NavBarBody{
-    /* border: 2px solid red; */
-    display: flex;
+    /* border: 2px solid red;*/
+    display: flex; 
     align-items: center;
     justify-content: space-between;
-    padding: 25px 30px;
+    padding: 10px 30px;
 }
 .nav1{
     /* border: 2px solid blue; */
